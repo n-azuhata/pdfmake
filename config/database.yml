@@ -83,9 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: testapi_production
-  username: testapi
-  password: <%= ENV['TESTAPI_DATABASE_PASSWORD'] %>
   adapter: postgresql
   encoding: unicode
   pool: 5
